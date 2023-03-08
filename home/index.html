@@ -21,10 +21,18 @@
             </div>
             <div class="nav-items d-flex">
                 <ul class="list-group-horizontal d-flex p-3 m-0">
-                    <li class="list-group-item">Home</li>
-                    <li class="list-group-item">Media & Resources </li>
-                    <li class="list-group-item">Our Communites</li>
-                    <li class="list-group-item">Sign In</li>
+                    <li class="list-group-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#WWB">What We Believe?</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#M_R">Media & Resources</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#Events">Events</a>
+                    </li>
                 </ul>
                 <div class="menu_icon"><i class="fas fa-bars"></i></div>
                 <div class="list-group-item ">
@@ -55,7 +63,7 @@
         <h2 class="block">Sweet & Eternal</h2>
         <h2 class="block">Light & Power </h2>
     </div>
-    <div class="WWB block text-light bg-dark p-5 rounded container">
+    <div id="WWB" class="WWB block text-light bg-dark p-5 rounded container">
         <h1 class="block mb-5 m-3" style="border-bottom: goldenrod 1px solid;width: fit-content;">WHAT WE BELIEVE</h1>
         <div class=" d-flex">
             <div class="block  m-3" style="word-spacing: 2px;letter-spacing: 1px;">
@@ -85,11 +93,95 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex">
-        <div>
+    <div id="M_R" class="container d-flex M_R p-5 mb-5">
+        <div class="M_R_text">
             <h2>Media & Resources</h2>
-            <p></p>
+            <p>To have contact with Him, faith is required, and this faith must be stirred up by preaching. And the preaching must have the Word of God as its contents. Only then can man discover himself, Who God is, and what He has done to save him.</p>
+            <h5>Listen to Our Resources <i class="fa fa-arrow-right"></i></h5>
         </div>
+        <div class="d-flex M_R_block">
+            <ul class="nospace group elements elements-four">
+
+                <li class=" lp one_quarter">
+                    <article><a rel="k" href="{% url 'audio-home"><i class=" fas fa-music"></i></a>
+                        <h6 class="heading">Audios</h6>
+                        <p>All our truth audio messages are available for free.</p>
+                    </article>
+                </li>
+                <li class=" lp one_quarter">
+                    <article><a rel="k" href="{% url 'video-home"><i class="fas fa-video"></i></a>
+                        <h6 class="heading">Videos</h6>
+                        <p>Free access to the entire teaching as well as its various layers.</p>
+                    </article>
+                </li>
+            </ul>
+
+            <ul class="nospace group elements elements-four">
+                <li class=" lp one_quarter">
+                    <article><a rel="" href="{% url 'image-home"><i class="fas fa-images"></i></a>
+                        <h6 class="heading">Images</h6>
+                        <p>View the images in our gallery and from Soul Center..</p>
+                    </article>
+                </li>
+                <li class=" lp one_quarter">
+                    <article><a rel="" href="{% url 'blog-home"><i class="fas fa-edit"></i></a>
+                        <h6 class="heading">Blogs</h6>
+                        <p>read the articles the brethren at soul center have written.</p>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="img_banner">
+    </div>
+    <div id="Events">
+        <section id="services" class="hoc container clear">
+            <div class="sectiontitle">
+                <p class="nospace font-xs" style=" font-style: italic;color: white;font-size:1.5rem !important">Join Us</p>
+                <h6 class="heading font-x2" style="font-size:2rem !important">Our ministries</h6>
+                <br>
+                <p>Be a part of the layers of truth in the soul center by joining our minister.</p>
+            </div>
+            <ul class="nospace group elements elements-three d-flex">
+
+                <li class="one_third text-black">
+                    <article>
+                        <a rel="layers of truth's soul center link" class="text-black" href=""><img style="width:100px;height:100px" src="assets/imgs/download.png" alt="layers of truth soul center image of ">
+                            <h6 class="heading">Communinion Service</h6>
+                            <p>Every Sunday 8:00am
+                            </p>
+                            <p>
+                                Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
+                            </p>
+                        </a>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <a rel="layers of truth's soul center link" class="text-black" href="#"><img style="width:100px;height:100px" src="assets/imgs/VOP -.png" alt="layers of truth soul center image of ">
+                            <h6 class="heading">Voice Of Prayer</h6>
+                            <p>Every Tuesday 6:00pm
+                            </p>
+                            <p>
+                                Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
+                            </p>
+                        </a>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <a rel="layers of truth's soul center link" class="text-black" href="#"><img style="width:100px;height:100px" src="assets/imgs/revelation hour logo.png" alt="layers of truth soul center image of ">
+                            <h6 class="heading">Revelation Hour</h6>
+                            <p>Every Thursday 5:00pm
+                            </p>
+                            <p>
+                                Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
+                            </p>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
     </div>
 </body>
 
