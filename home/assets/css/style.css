@@ -10,7 +10,7 @@
         text-decoration: none;
     }
     
-    colo:root {
+     :root {
         --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
@@ -21,7 +21,8 @@
     }
     
     nav {
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 2rem;
     }
     
     header {
@@ -30,7 +31,8 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        min-height: 100%;
+        min-height: 87vh;
+        height: 100%;
     }
     
     .nav-header {
@@ -69,7 +71,7 @@
     
     .main-text {
         width: 600px;
-        padding: 1rem;
+        padding: 0.8rem;
         font-size: 1.2rem;
     }
     
@@ -87,10 +89,10 @@
     
     .brand {
         font-style: italic;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 13vh;
         align-items: center;
-        padding: 20px 10px;
+        padding: 2rem;
     }
     
     .brand>.block {
@@ -105,6 +107,11 @@
     
     .WWB>* {
         color: white;
+    }
+    
+    .menu_icon {
+        display: none;
+        align-self: center;
     }
     
     @media screen and (max-width:860px) {
