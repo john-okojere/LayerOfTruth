@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    padding: 20px 90px;
+    padding: 17px 60px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
 }
@@ -95,8 +95,55 @@ nav{
 .home_img>img{
     width: 370px;
     height: 320px;
+    border-radius: 400px;
+}
+.event-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    /* padding: 0px; */
+}
+.event_detail{
+    background-color:rgb(17, 16, 16);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 500px; 
+    border-radius: 10px;
+    padding-top: 1px;
+}
+.event-details>h3{
+    color: goldenrod;
+}
+.bookings{
+  width: 500px;
+  height: 600px;  
+  font- size: 14px;
 }
 
+.form{
+    background-image: url("assets/imgs/form_bg-img.jpg");
+    width: 500px;
+  height: 600px;  
+  border-color: white;
+
+}
+.labels{
+
+}
+.labels>input{
+    width: 200px;
+}
+
+.register-btn{
+    width: 90px ;
+    height: 30px;
+    color: white ;
+    background: rgb(144, 104, 2);
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+/* =====================footer section======================== */
 footer{
     /* display: grid; */
     
