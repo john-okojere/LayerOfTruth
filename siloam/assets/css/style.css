@@ -39,7 +39,7 @@ ul>li{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: goldenrod;
     font-size: 14px;
 }
 p{
@@ -69,10 +69,17 @@ nav{
     color: white;
     background-color:rgb(106, 62, 5);
 }
+/* =====================main styling=============================== */
+                        /* section1 */
+.event_info{
+    display: flex;
+}
 
-/* section1 */
+.info>h1{
+    /* color: goldenrod; */
+}
 .info{
-    width: 650px;
+    width: 580px;
 }
 .sub-info>input{
     width: 200px;
@@ -83,6 +90,11 @@ nav{
     height: 29px;
     font-weight: 700;  
     color:rgb(230, 65, 18) ;
+}
+
+.home_img>img{
+    width: 370px;
+    height: 320px;
 }
 
 footer{
