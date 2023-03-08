@@ -9,23 +9,28 @@ body{
 }
 
 .s{
+    font-size: 22px;
     color:red;
 }
 .i{
+    font-size: 22px;
     color:yellow;
 }
 .l{
+    font-size: 22px;
     color:blue
 }
 .o{
+    font-size: 22px;
     color:orangered
 }
 .a{
+    font-size: 22px;
     color:red;
 }
 .m{
     font-size: 22px;
-    font-weight: 500;
+    /* font-weight: 500; */
     color:red;
 }
 
@@ -58,6 +63,7 @@ nav{
 }
 .reg{
     height: 20px;
+    width: 100px;
     border:none;
     border-radius: 12px;
     color: white;
