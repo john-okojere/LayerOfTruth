@@ -1,3 +1,4 @@
+// require('dotenv').config();
 const emailInputField=  document.querySelector('#subscribe-Email');
 const emailBtn = document.querySelector('.subscribe');
 const emailSignUp = document.querySelector('.email-Sign-Up');
@@ -72,3 +73,22 @@ checkNo.addEventListener('click',function(){
 
 })
 
+
+
+
+
+
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+import firebaseConfig from "./variable.js"
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+console.log(firebaseConfig)
+
+import{getDatabase,set,get,update,remove,ref,child}
+from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
+
+
+const db = getDatabase(); 
