@@ -4,34 +4,8 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
 }
-.logo{
-
-}
-
-.s{
-    font-size: 22px;
-    color:red;
-}
-.i{
-    font-size: 22px;
-    color:yellow;
-}
-.l{
-    font-size: 22px;
-    color:blue
-}
-.o{
-    font-size: 22px;
-    color:orangered
-}
-.a{
-    font-size: 22px;
-    color:red;
-}
-.m{
-    font-size: 22px;
-    /* font-weight: 500; */
-    color:red;
+.logo img{
+width: 200px;
 }
 
 ul>li{
@@ -39,10 +13,7 @@ ul>li{
 }
 a{
     text-decoration: none;
-    color: goldenrod;
-    font-size: 14px;
-}
-p{
+    color: white;
     font-size: 14px;
 }
 header{
@@ -62,32 +33,59 @@ nav{
 
 }
 .reg{
-    height: 20px;
-    width: 100px;
     border:none;
-    border-radius: 12px;
+    border-radius: 10px;
     color: white;
+    font-size: 1rem;
     background-color:rgb(106, 62, 5);
+    padding: 10px;
 }
 /* =====================main styling=============================== */
                         /* section1 */
 .event_info{
     display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    margin: 2rem 0;
 }
-
-.info>h1{
+.header1{
+    line-height: 2px;
+}
+.info>p{
     /* color: goldenrod; */
+    margin: 2rem 0;
 }
 .info{
-    width: 580px;
+    max-width: 580px;
+    align-self: center;
+}
+
+input{
+    width: 50%;
+    height: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
 }
 .sub-info>input{
-    width: 200px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sub-info>button.reg{
+    padding: 10px;
+    font-size: 1rem;
+    height: 100%;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.sub-info{
+    line-height: 2px;
+    width: 100%;
 }
 .subscribe{
     border-radius: 7px;
     border: none;  
-    height: 29px;
     font-weight: 700;  
     color:rgb(230, 65, 18) ;
 }
@@ -103,16 +101,27 @@ nav{
     margin-top: -20px;
     /* padding: 0px; */
 }
-.event_detail{
+.countdown{
     background-color:rgb(17, 16, 16);
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 500px; 
     border-radius: 10px;
-    padding-top: 1px;
+    padding: 1rem;
+    margin: 1rem;
 }
 .event-details>h3{
     color: goldenrod;
+}
+.countdown h1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5rem 0;
+    font-size: 2rem;
+    text-align:center ;
+}
+.countdown >h3 {
+    padding: 10px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .bookings{
   width: 500px;
@@ -125,6 +134,12 @@ nav{
     width: 500px;
   height: 600px;  
   border-color: white;
+
+}
+.header-footer__social{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
 
 }
 .labels{
