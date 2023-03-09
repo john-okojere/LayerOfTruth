@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -57,164 +59,228 @@
             </div>
         </div>
     </header>
-    <div class="d-flex brand text-muted container">
-        <h2 class="block">Taste & See</h2>
-        <h2 class="block">WinePress</h2>
-        <h2 class="block">Sweet & Eternal</h2>
-        <h2 class="block">Light & Power </h2>
-    </div>
-    <div id="WWB" class="WWB block text-light bg-dark p-5 rounded container">
-        <h1 class="block mb-5 m-3" style="border-bottom: goldenrod 1px solid;width: fit-content;">WHAT WE BELIEVE</h1>
-        <div class=" d-flex">
-            <div class="block  m-3" style="word-spacing: 2px;letter-spacing: 1px;">
-                <h4 class="block" style="border-bottom: goldenrod 1px solid;width: fit-content;">
-                    The Church
-                </h4>
-                <p>The church is the body of Christ, the habitation of God through the Spirit with divine appointments for the fulfillment of the great commission. Each believer, born of the Spirit, is an integral part of the church of the firstborn, which
-                    are written in heaven (Ephesians 1:22-23; 2:22; Hebrews 12:33).
-                </p>
-            </div>
-
-            <div class="block m-3" style="word-spacing: 2px;letter-spacing: 1px;">
-                <h4 class="block" style="border-bottom: goldenrod 1px solid;width: fit-content;">
-                    God - Eternal, Creator
-                </h4>
-                <p>The one true God has revealed Himself as the eternally self-existent “I AM,” the Creator of heaven and earth and the Redeemer of mankind. He has further revealed Himself as embodying the principles of relationship and association as Father,
-                    Son and Holy Spirit (Deuteronomy 6:4; Isaiah 43:10, 11; Matthew 28:19; Luke 3:22).
-                </p>
-            </div>
-
-            <div class="block  m-3" style="word-spacing: 2px;letter-spacing: 1px;">
-                <h4 class="block" style="border-bottom: goldenrod 1px solid;width: max-content;">
-                    Jesus - Son of God
-                </h4>
-                <p>The Lord Jesus Christ is the eternal Son of God. The Scriptures declare His virgin birth (Matthew 1:23; Luke 1:31; Luke 1:35), His sinless life (Hebrews 7:26; 1 Peter 2:22), His miracles (Acts 2:22; Acts 10:38),
-                </p>
-            </div>
+    <main>
+        <div class=" brand text-muted container">
+            <h3 class="block">Taste & See</h3>
+            <h3 class="block">WinePress</h3>
+            <h3 class="block">Sweet & Eternal</h3>
+            <h3 class="block">Light & Power </h3>
         </div>
-    </div>
-    <div id="M_R" class="container d-flex M_R p-5 mb-5">
-        <div class="M_R_text">
-            <h2>Media & Resources</h2>
-            <p>To have contact with Him, faith is required, and this faith must be stirred up by preaching. And the preaching must have the Word of God as its contents. Only then can man discover himself, Who God is, and what He has done to save him.</p>
-            <h5>Listen to Our Resources <i class="fa fa-arrow-right"></i></h5>
-        </div>
-        <div class="d-flex M_R_block">
-            <ul class="nospace group elements elements-four">
-
-                <li class=" lp one_quarter">
-                    <article><a rel="k" href="{% url 'audio-home"><i class=" fas fa-music"></i></a>
-                        <h6 class="heading">Audios</h6>
-                        <p>All our truth audio messages are available for free.</p>
-                    </article>
-                </li>
-                <li class=" lp one_quarter">
-                    <article><a rel="k" href="{% url 'video-home"><i class="fas fa-video"></i></a>
-                        <h6 class="heading">Videos</h6>
-                        <p>Free access to the entire teaching as well as its various layers.</p>
-                    </article>
-                </li>
-            </ul>
-
-            <ul class="nospace group elements elements-four">
-                <li class=" lp one_quarter">
-                    <article><a rel="" href="{% url 'image-home"><i class="fas fa-images"></i></a>
-                        <h6 class="heading">Images</h6>
-                        <p>View the images in our gallery and from Soul Center..</p>
-                    </article>
-                </li>
-                <li class=" lp one_quarter">
-                    <article><a rel="" href="{% url 'blog-home"><i class="fas fa-edit"></i></a>
-                        <h6 class="heading">Blogs</h6>
-                        <p>read the articles the brethren at soul center have written.</p>
-                    </article>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="img_banner">
-    </div>
-    <div id="OurMinistries">
-        <section id="services" class="hoc container clear">
-            <div class="sectiontitle">
-                <p class="nospace font-xs" style=" font-style: italic;color: white;font-size:1.5rem !important">Join Us</p>
-                <h6 class="heading font-x2" style="font-size:2rem !important">Our ministries</h6>
-                <br>
-                <p>Be a part of the layers of truth in the soul center by joining our minister.</p>
-            </div>
-            <ul class="nospace group elements elements-three d-flex">
-
-                <li class="one_third text-black">
-                    <article>
-                        <a rel="layers of truth's soul center link" class="text-black" href=""><img style="width:100px;height:100px" src="assets/imgs/download.png" alt="layers of truth soul center image of ">
-                            <h6 class="heading">Communinion Service</h6>
-                            <p>Every Sunday 8:00am
-                            </p>
-                            <p>
-                                Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
-                            </p>
-                        </a>
-                    </article>
-                </li>
-                <li class="one_third">
-                    <article>
-                        <a rel="layers of truth's soul center link" class="text-black" href="#"><img style="width:100px;height:100px" src="assets/imgs/VOP -.png" alt="layers of truth soul center image of ">
-                            <h6 class="heading">Voice Of Prayer</h6>
-                            <p>Every Tuesday 6:00pm
-                            </p>
-                            <p>
-                                Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
-                            </p>
-                        </a>
-                    </article>
-                </li>
-                <li class="one_third">
-                    <article>
-                        <a rel="layers of truth's soul center link" class="text-black" href="#"><img style="width:100px;height:100px" src="assets/imgs/revelation hour logo.png" alt="layers of truth soul center image of ">
-                            <h6 class="heading">Revelation Hour</h6>
-                            <p>Every Thursday 5:00pm
-                            </p>
-                            <p>
-                                Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
-                            </p>
-                        </a>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    </div>
-    <div class="Action container mt-5">
-        <div class="d-flex tabs">
-            <h1>You Can Start Again </h1>
-            <h1>Do You Have A Prayer Request?</h1>
-        </div>
-        <div class="tab_content">
+        <div id="WWB" class="WWB block text-light bg-dark  rounded container">
+            <h1 class="block mb-5 m-3" style="border-bottom: goldenrod 1px solid;width: fit-content;">WHAT WE BELIEVE</h1>
             <div class="content">
-                <h3>Exhortation, Encouragement, and Prayer</h3>
-                <p>Don't worry about anything, but pray and ask God for everything you need, always giving thanks for what you have. And because you belong to Christ Jesus, God's peace will stand guard over all your thoughts and feelings. His peace can do
-                    this far better than our human minds.
-                </p>
-                <form action="" method="post">
-                    <input type="text" placeholder="Enter Full Name">
-                    <input type="textarea" placeholder=" Enter Your Prayer Request " id=" ">
-                    <input type="submit" value="Submit Request">
+                <div class="block  m-3" style="word-spacing: 2px;letter-spacing: 1px;">
+                    <h4 class="block" style="border-bottom: goldenrod 1px solid;width: fit-content;">
+                        The Church
+                    </h4>
+                    <p>The church is the body of Christ, the habitation of God through the Spirit with divine appointments for the fulfillment of the great commission. Each believer, born of the Spirit, is an integral part of the church of the firstborn,
+                        which are written in heaven (Ephesians 1:22-23; 2:22; Hebrews 12:33).
+                    </p>
+                </div>
+
+                <div class="block m-3" style="word-spacing: 2px;letter-spacing: 1px;">
+                    <h4 class="block" style="border-bottom: goldenrod 1px solid;width: fit-content;">
+                        God - Eternal, Creator
+                    </h4>
+                    <p>The one true God has revealed Himself as the eternally self-existent “I AM,” the Creator of heaven and earth and the Redeemer of mankind. He has further revealed Himself as embodying the principles of relationship and association as
+                        Father, Son and Holy Spirit (Deuteronomy 6:4; Isaiah 43:10, 11; Matthew 28:19; Luke 3:22).
+                    </p>
+                </div>
+
+                <div class="block  m-3" style="word-spacing: 2px;letter-spacing: 1px;">
+                    <h4 class="block" style="border-bottom: goldenrod 1px solid;width: max-content;">
+                        Jesus - Son of God
+                    </h4>
+                    <p>The Lord Jesus Christ is the eternal Son of God. The Scriptures declare His virgin birth (Matthew 1:23; Luke 1:31; Luke 1:35), His sinless life (Hebrews 7:26; 1 Peter 2:22), His miracles (Acts 2:22; Acts 10:38),
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="M_R" class="container M_R p-5 mb-5">
+            <div class="M_R_text">
+                <h2>Media & Resources</h2>
+                <p>To have contact with Him, faith is required, and this faith must be stirred up by preaching. And the preaching must have the Word of God as its contents. Only then can man discover himself, Who God is, and what He has done to save him.</p>
+                <h5>Listen to Our Resources <i class="fa fa-arrow-right"></i></h5>
+            </div>
+            <div class="d-flex M_R_block">
+                <ul class="nospace group elements elements-four">
+
+                    <li class=" lp one_quarter">
+                        <article><a rel="k" href="{% url 'audio-home"><i class=" fas fa-music"></i></a>
+                            <h6 class="heading">Audios</h6>
+                            <p>All our truth audio messages are available for free.</p>
+                        </article>
+                    </li>
+                    <li class=" lp one_quarter">
+                        <article><a rel="k" href="{% url 'video-home"><i class="fas fa-video"></i></a>
+                            <h6 class="heading">Videos</h6>
+                            <p>Free access to the entire teaching as well as its various layers.</p>
+                        </article>
+                    </li>
+                </ul>
+
+                <ul class="nospace group elements elements-four">
+                    <li class=" lp one_quarter">
+                        <article><a rel="" href="{% url 'image-home"><i class="fas fa-images"></i></a>
+                            <h6 class="heading">Images</h6>
+                            <p>View the images in our gallery and from Soul Center..</p>
+                        </article>
+                    </li>
+                    <li class=" lp one_quarter">
+                        <article><a rel="" href="{% url 'blog-home"><i class="fas fa-edit"></i></a>
+                            <h6 class="heading">Blogs</h6>
+                            <p>read the articles the brethren at soul center have written.</p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="img_banner">
+        </div>
+        <div id="OurMinistries">
+            <section id="services" class="hoc container clear">
+                <div class="sectiontitle">
+                    <p class="nospace font-xs" style=" font-style: italic;color: white;font-size:1.5rem !important">Join Us</p>
+                    <h6 class="heading font-x2" style="font-size:2rem !important">Our ministries</h6>
+                    <br>
+                    <p>Be a part of the layers of truth in the soul center by joining our minister.</p>
+                </div>
+                <ul class="nospace group elements elements-three">
+
+                    <li class="one_third text-black">
+                        <article>
+                            <a rel="layers of truth's soul center link" class="text-black" href=""><img style="width:100px;height:100px" src="assets/imgs/download.png" alt="layers of truth soul center image of ">
+                                <h6 class="heading">Communinion Service</h6>
+                                <p>Every Sunday 8:00am
+                                </p>
+                                <p>
+                                    Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
+                                </p>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="one_third">
+                        <article>
+                            <a rel="layers of truth's soul center link" class="text-black" href="#"><img style="width:100px;height:100px" src="assets/imgs/VOP -.png" alt="layers of truth soul center image of ">
+                                <h6 class="heading">Voice Of Prayer</h6>
+                                <p>Every Tuesday 6:00pm
+                                </p>
+                                <p>
+                                    Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
+                                </p>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="one_third">
+                        <article>
+                            <a rel="layers of truth's soul center link" class="text-black" href="#"><img style="width:100px;height:100px" src="assets/imgs/revelation hour logo.png" alt="layers of truth soul center image of ">
+                                <h6 class="heading">Revelation Hour</h6>
+                                <p>Every Thursday 5:00pm
+                                </p>
+                                <p>
+                                    Venue: <strong>Soul Center</strong> Along mothercat road farin gida, mando kaduna.
+                                </p>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="Action container mt-5">
+            <div class="d-flex tabs">
+                <h1>You Can Start Again </h1>
+                <h1>Do You Have A Prayer Request?</h1>
+            </div>
+            <div class="tab_content">
+                <div class="content">
+                    <h3>Exhortation, Encouragement, and Prayer</h3>
+                    <p>Don't worry about anything, but pray and ask God for everything you need, always giving thanks for what you have. And because you belong to Christ Jesus, God's peace will stand guard over all your thoughts and feelings. His peace can
+                        do this far better than our human minds.
+                    </p>
+                    <form action="" method="post">
+                        <h5 class="text-left">Let Us Prayer for you</h5>
+                        <input type="text" placeholder="Enter Full Name">
+                        <textarea placeholder=" Enter Your Prayer Request " id=" "></textarea>
+                        <input class="px-5" type="submit" value="Send  Your Prayer Request">
+                    </form>
+                </div>
+                <div class="content">
+                    <h3>Justified by Faith</h3>
+                    <p>We were born Christians. As we call people who are not Christians, we were not sinners at birth. But we are aware that abiding by the law does not make one righteous in God's eyes. Trusting in Jesus Christ is what reconciles a person
+                        to God. Since we want to be reconciled to God, we placed our confidence in Christ Jesus. And it is because of our faith in Christ, not because we kept the law, that we are right with him. I am able to say this because obeying the
+                        law cannot make someone right with God. It is obvious that we Jews were also sinners since we came to Christ to be reconciled to God. Does this imply that we are sinners because of Christ? Of course not.</p>
+                    <form action="" method="post">
+                        <h5 class="text-left">Let Us Check up on you</h5>
+                        <input type="text" placeholder="Enter Full Name">
+                        <input type="text" placeholder=" Enter Phone Number " id=" ">
+                        <input type="submit" value="Submit Details">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="WLFC container py-5 ">
+            <div>
+                <img src="assets/imgs/IMG-20220425-WA0004.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>We Live For Christ</h3>
+                <p>I took my own life in accordance with the law because of the law itself. In order to live for God, I had to die to the law. Along with Christ, I was nailed on the cross. Therefore, Christ lives in me; I am not the one who lives now. Although
+                    I still have a physical body, I still have confidence in the Son of God. He is the one who gave of himself out of love for me. The purpose of God's grace is not to be destroyed by me. Christ did not have to die if keeping the law is
+                    how one is reconciled to God.</p>
+            </div>
+        </div>
+        <br>
+        <div class="contact container py-5">
+
+
+            <div class="contact_info text-muted ">
+                <h1>Contact Us</h1>
+                <h4>
+                    <div><strong> Address</strong>: <br>
+                        <p>Along mothercat road,farin gida mando kaduna kaduna Nigeria.</p>
+                    </div>
+                    <div> <strong>Phone</strong>: <br>
+                        <p><a href="tel:+2348170526942"> +234(0) 817 052 6942</a></p>
+                    </div>
+                    <div> <strong>Email</strong>: <br>
+                        <p><a href="mailto:layersoftruthkd@gmail.com">layersoftruthkd@gmail.com</a></p>
+                    </div>
+
+                </h4>
+                <form action="" class="subscribe_form" method="post">
+                    <div class="d-flex">
+                        <input type="email" placeholder="Enter Email"> <input type="submit" value="Subscribe">
+                    </div>
+                    <h5>Subscribe To Our Online Updates</h5>
                 </form>
             </div>
-            <div class="content">
-                <h3>Justified by Faith</h3>
-                <p>We were born Christians. As we call people who are not Christians, we were not sinners at birth. But we are aware that abiding by the law does not make one righteous in God's eyes. Trusting in Jesus Christ is what reconciles a person to
-                    God. Since we want to be reconciled to God, we placed our confidence in Christ Jesus. And it is because of our faith in Christ, not because we kept the law, that we are right with him. I am able to say this because obeying the law
-                    cannot make someone right with God. It is obvious that we Jews were also sinners since we came to Christ to be reconciled to God. Does this imply that we are sinners because of Christ? Of course not.</p>
-                <form action="" method="post">
-                    <input type="text" placeholder="Enter Full Name">
-                    <input type="text" placeholder=" Enter Phone Number " id=" ">
-                    <input type="submit" value="Submit Details">
-                </form>
-            </div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d31374.58486973226!2d7.413504770074316!3d10.592999416545574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d10.6094634!2d7.4411644!4m5!1s0x11b2cb526701f3d9%3A0xca499d63506c1830!2slayers%20of%20truth!3m2!1d10.580027999999999!2d7.4208725!5e0!3m2!1sen!2sng!4v1678314598862!5m2!1sen!2sng"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
-    </div>
+    </main>
+    <hr class="mx-5 mt-5 ">
+    <footer class=" container py-3">
+        <div class="d-flex text-center d-flex">
+            <div class="footer_logo"></div>
+            <h4>@ Layers Of Truth</h4>
+        </div>
+        <div class=" socials">
+            <ul class="d-flex list-unstyled ">
+                <li class="ms-3">
+                    <a class="text-muted" href="#"><i class="fa fa-square-twitter"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#"><i class="fa fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#"><i class="fa fa-instagram-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
-
-</html>
 
 </html>
