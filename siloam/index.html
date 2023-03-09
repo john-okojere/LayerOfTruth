@@ -40,8 +40,9 @@
                     consequatur ipsum, veniam quas quae exercitationem minima magnam, harum, maxime cupiditate deleniti
                     debitis vitae vero maiores.</p>
                 <div class="sub-info">
-                    <input type="email" name="" id="subscribe-Email" placeholder="name@gmail.com">
-                    <button class="reg">Subscribe</button>
+                    <input type="email" name="" class="subscribe-Email" id="subscribe-Email" placeholder="name@gmail.com">
+                    <h3 class="msgEmailSubscription"></h3>
+                    <button class="reg subscribe">Subscribe</button>
                     <p>Get Updates Related to the event</p>
                     <div class="header-footer__social">
                         </div>
@@ -80,22 +81,26 @@
 
                 <div class="labels">
 
-                    <p>Name <input class="form_input"  type="text" placeholder="full name"> </p> 
+                    <p>Name <input class="form_input nameSignUp"  type="text" placeholder="full name"> </p> 
+                    <P class="msgName" ></P>
                    
 
-                    <p>Email Address <input  class="form_input"   type="email" id="" placeholder="  name@gmail.com">
+                    <p>Email Address <input  class="form_input email-Sign-Up"   type="email" id="" placeholder="  name@gmail.com">
                     </p>
-                    <p>Phone Number <input  class="form_input"   type="tel" placeholder="080 123 4567 890">
+                    <P class="msgemail" ></P>
+                    <p>Phone Number <input  class="form_input PhoneNumber-signUp"   type="number" placeholder="080 123 4567 890">
                     </p>
+                    <P class="msgPhone" ></P>
 
-                    <p>Location   <input  class="form_input"   type="address" placeholder="Street Addrerss           City               State/ Province "></p>
+                    <p>Location   <input  class="form_input Location-Signup"   type="address" placeholder="Street Addrerss           City               State/ Province "></p>
+                    <P class="msglocation" ></P>
                                 
                 </div>
 
                 <div class="question">
                     First time to attend this conference?<br>
-                    <input type="checkbox" >Yes <br>
-                    <input type="checkbox" name="no" id="">No <br>
+                    <input type="checkbox"  class = "check-yes" >Yes <br>
+                    <input type="checkbox" class="check-No" name="no" id="">No <br>
                 </div>
 <br>
                 <div class="question">
@@ -103,13 +108,13 @@
                     We have accomodation for you... <br>
                     <br>
                     should we make reservations for you ? <br>
-                    <input type="checkbox"  id="" > Yes <br>  
-                    <input type="checkbox"  id="">  No
+                    <input type="checkbox"  class ="check-yes-reservation"  id="" > Yes <br>  
+                    <input type="checkbox" class="check-No-reservation"  id="">  No
 
                 </div>
 
                 <div class="reg-btn-container">
-                    <button class="form_reg">Register</button>
+                    <button class="form_reg regsiter-btn">Register</button>
                 </div>
 
 
@@ -173,10 +178,115 @@
 
                 <p>Copyright © 2023 layers of Truth</p>
             </div>
+<<<<<<< HEAD
         </div>
     </footer>
     <script type ="module" src="./assets/JS/index.js"></script>
 
+=======
+        </footer>
+     <script src="./assets/JS/index.js"></script>
+    
+>>>>>>> 6698f4b84eddba24b63599ae4b26c777ed79cb9e
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nameSignUp.addEventListener('blur',function(){
+
+    if (nameSignUp.value ===""){
+      msgName.textContent = "name cannot be left empty"
+  
+      
+    }
+   else if (nameSignUp.value.length  < 3){
+  
+      msgName.textContent = "name cannot be less than 3 characters"
+    }
+  })
+  
+  nameSignUp.addEventListener('focus',function(){
+    
+    msgName.textContent = ""
+  })
+  
+  // validation for phone number
+  
+  phoneSignUp.addEventListener('blur',function(){
+  
+    if (phoneSignUp.value ===""){
+      msgPhone.textContent = "phone number is required"
+  
+      
+    }
+   else if (phoneSignUp.value.length  < 7){
+  
+    msgPhone.textContent = "invalid phone number"
+    }
+  })
+  
+  phoneSignUp.addEventListener('focus',function(){
+    
+    msgPhone.textContent = ""
+  })
+  
+  
+  // email vallidation for sign up
+  
+  emailSignUp.addEventListener('blur',function(){
+   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var update = emailPattern.test(emailInputField.value);
+    if (emailSignUp.value ===""){
+     msgemail.textContent = "email cannot be left empty"
+  
+      
+    }
+   
+   else  if(update ===  false ){
+      msgemail.textContent = "invalid Email"
+  
+  
+    }
+  })
+  emailSignUp.addEventListener('focus',function(){
+    
+    msgemail.textContent = ""
+  })
+  
+  
+  // location validation for signUp
+  
+  LocationSignUP.addEventListener('blur',function(){
+  
+    if (LocationSignUP.value ===""){
+      msglocation.textContent = "please enter location"
+  
+      
+    }
+   else if (LocationSignUP.value.length  < 6){
+  
+      msglocation.textContent = "loccation cannot be less than 5 characters"
+    }
+  })
+  
+  LocationSignUP.addEventListener('focus',function(){
+    
+    msglocation.textContent = ""
+  })
