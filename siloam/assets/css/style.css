@@ -95,7 +95,7 @@ input{
 .home_img>img{
     width: 370px;
     height: 320px;
-    border-radius: 400px;
+    border-radius: 70% 55% 67% 20% ;
 }
 .event-details{
     display: flex;
@@ -132,7 +132,7 @@ input{
   /* justify-content:center; */
   /* font- size: 14px; */
   /* text-align: center; */
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 ::placeholder{
     font-size: 12px;
