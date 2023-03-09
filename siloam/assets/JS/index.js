@@ -25,10 +25,10 @@ checkNo.value = false;
 
 
 
-emailBtn.addEventListener('click',function(){
+// emailBtn.addEventListener('click',function(){
     
-    console.log(emailInputField.value)
-})
+//     console.log(emailInputField.value)
+// })
 
 btnRegister.addEventListener('click', function(){
 
@@ -79,16 +79,45 @@ checkNo.addEventListener('click',function(){
 
 
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
-import firebaseConfig from "./variable.js"
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+// import firebaseConfig from "./variable.js"
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-console.log(firebaseConfig)
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+// console.log(firebaseConfig)
 
-import{getDatabase,set,get,update,remove,ref,child}
-from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
+// import{getDatabase,set,get,update,remove,ref,child}
+// from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
 
 
-const db = getDatabase(); 
+// const db = getDatabase(); 
+
+// function insertData(){
+//     set(ref(db,"newsLetters/"),{
+//       EmailSuscribe:emailInputField.value
+//     }).then(function(){
+//       alert("data uploaded successfully")
+//     })
+//     .catch(function(err){
+//       alert(err.message);
+//     })
+//   }
+
+//   function findData (){
+//     insertData();
+//     const dbref = ref(db);
+//     get(dbref,"newsLetters/").then(function(response){
+//       if(response.exists()){
+//         console.log(response.val().EmailSuscribe)
+
+//       }
+//     })
+//   }
+
+//   emailBtn.addEventListener('click',findData);
+
+
+
+
+
