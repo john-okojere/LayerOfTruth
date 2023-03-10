@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
 </head>
 
 <body>
@@ -106,13 +104,13 @@
                 <ul class="nospace group elements elements-four">
 
                     <li class=" lp one_quarter">
-                        <article><a rel="k" href="{% url 'audio-home"><i class=" fas fa-music"></i></a>
+                        <article><a rel="k" href="#"><i class=" fas fa-music"></i></a>
                             <h6 class="heading">Audios</h6>
                             <p>All our truth audio messages are available for free.</p>
                         </article>
                     </li>
                     <li class=" lp one_quarter">
-                        <article><a rel="k" href="{% url 'video-home"><i class="fas fa-video"></i></a>
+                        <article><a rel="k" href="#"><i class="fas fa-video"></i></a>
                             <h6 class="heading">Videos</h6>
                             <p>Free access to the entire teaching as well as its various layers.</p>
                         </article>
@@ -121,13 +119,13 @@
 
                 <ul class="nospace group elements elements-four">
                     <li class=" lp one_quarter">
-                        <article><a rel="" href="{% url 'image-home"><i class="fas fa-images"></i></a>
+                        <article><a rel="" href="#"><i class="fas fa-images"></i></a>
                             <h6 class="heading">Images</h6>
                             <p>View the images in our gallery and from Soul Center..</p>
                         </article>
                     </li>
                     <li class=" lp one_quarter">
-                        <article><a rel="" href="{% url 'blog-home"><i class="fas fa-edit"></i></a>
+                        <article><a rel="" href="#"><i class="fas fa-edit"></i></a>
                             <h6 class="heading">Blogs</h6>
                             <p>read the articles the brethren at soul center have written.</p>
                         </article>
@@ -188,99 +186,120 @@
         </div>
         <div class="Action container mt-5">
             <div class="d-flex tabs">
-                <h1>You Can Start Again </h1>
-                <h1>Do You Have A Prayer Request?</h1>
+                <h1><a href="#content1" id="tab1" onclick="opentab1()">You Can Start Again </a></h1>
+                <h1>
+                    <a href="#content2" id="tab2" onclick="opentab2()">Do You Have A Prayer Request?</a></h1>
             </div>
-            <div class="tab_content">
-                <div class="content">
-                    <h3>Exhortation, Encouragement, and Prayer</h3>
+            <div class="tab_content p-5 ">
+                <div class="content " id="content1">
+                    <h3>Exhortation, and Prayer</h3>
                     <p>Don't worry about anything, but pray and ask God for everything you need, always giving thanks for what you have. And because you belong to Christ Jesus, God's peace will stand guard over all your thoughts and feelings. His peace can
                         do this far better than our human minds.
                     </p>
-                    <form action="" method="post">
-                        <h5 class="text-left">Let Us Prayer for you</h5>
-                        <input type="text" placeholder="Enter Full Name">
+                    <form action=" " method="post ">
+                        <h5 class="text-left ">Let Us Prayer for you</h5>
+                        <input type="text " placeholder="Enter Full Name ">
                         <textarea placeholder=" Enter Your Prayer Request " id=" "></textarea>
-                        <input class="px-5" type="submit" value="Send  Your Prayer Request">
+                        <input class="px-5 " type="submit" value="Send Your Prayer Request ">
                     </form>
                 </div>
-                <div class="content">
+                <div class="content " id="content2">
                     <h3>Justified by Faith</h3>
                     <p>We were born Christians. As we call people who are not Christians, we were not sinners at birth. But we are aware that abiding by the law does not make one righteous in God's eyes. Trusting in Jesus Christ is what reconciles a person
                         to God. Since we want to be reconciled to God, we placed our confidence in Christ Jesus. And it is because of our faith in Christ, not because we kept the law, that we are right with him. I am able to say this because obeying the
                         law cannot make someone right with God. It is obvious that we Jews were also sinners since we came to Christ to be reconciled to God. Does this imply that we are sinners because of Christ? Of course not.</p>
-                    <form action="" method="post">
-                        <h5 class="text-left">Let Us Check up on you</h5>
-                        <input type="text" placeholder="Enter Full Name">
-                        <input type="text" placeholder=" Enter Phone Number " id=" ">
-                        <input type="submit" value="Submit Details">
+                    <form action=" " method="post ">
+                        <h5 class="text-left ">Let Us Check up on you</h5>
+                        <input type="text " placeholder="Enter Full Name ">
+                        <input type="text " placeholder=" Enter Phone Number " id=" ">
+                        <input type="submit" value="Submit Details ">
                     </form>
                 </div>
             </div>
         </div>
-        <div class="WLFC container py-5 ">
-            <div>
-                <img src="assets/imgs/IMG-20220425-WA0004.jpg" alt="">
-            </div>
-            <div class="text">
+        <div class="WLFC container py-5  " style="min-height: 100vh;">
+
+            <div class="text p-5">
                 <h3>We Live For Christ</h3>
                 <p>I took my own life in accordance with the law because of the law itself. In order to live for God, I had to die to the law. Along with Christ, I was nailed on the cross. Therefore, Christ lives in me; I am not the one who lives now. Although
                     I still have a physical body, I still have confidence in the Son of God. He is the one who gave of himself out of love for me. The purpose of God's grace is not to be destroyed by me. Christ did not have to die if keeping the law is
                     how one is reconciled to God.</p>
             </div>
+            <div>
+                <img src="assets/imgs/IMG-20220425-WA0004.jpg " style="width:100%" alt=" ">
+            </div>
+        </div>
+
         </div>
         <br>
-        <div class="contact container py-5">
-
-
-            <div class="contact_info text-muted ">
-                <h1>Contact Us</h1>
-                <h4>
-                    <div><strong> Address</strong>: <br>
-                        <p>Along mothercat road,farin gida mando kaduna kaduna Nigeria.</p>
+        <div class=" container ">
+            <div class=" contact content ">
+                <div class="left-side ">
+                    <div class="address details ">
+                        <i class="fas fa-map-marker-alt "></i>
+                        <div class="topic ">Address</div>
+                        <div class="text-one ">Along mothercat road,</div>
+                        <div class="text-two ">farin gida mando kaduna Nigeria.</div>
                     </div>
-                    <div> <strong>Phone</strong>: <br>
-                        <p><a href="tel:+2348170526942"> +234(0) 817 052 6942</a></p>
+                    <div class="phone details ">
+                        <i class="fas fa-phone-alt "></i>
+                        <div class="topic ">Phone</div>
+                        <div class="text-one ">+234(0) 817 052 6942</div>
                     </div>
-                    <div> <strong>Email</strong>: <br>
-                        <p><a href="mailto:layersoftruthkd@gmail.com">layersoftruthkd@gmail.com</a></p>
+                    <div class="email details ">
+                        <i class="fas fa-envelope "></i>
+                        <div class="topic ">Email</div>
+                        <div class="text-one ">layersoftruthkd@gmail.com</div>
                     </div>
-
-                </h4>
-                <form action="" class="subscribe_form" method="post">
-                    <div class="d-flex">
-                        <input type="email" placeholder="Enter Email"> <input type="submit" value="Subscribe">
-                    </div>
-                    <h5>Subscribe To Our Online Updates</h5>
-                </form>
+                </div>
+                <div class="right-side ">
+                    <div class="topic-text ">Send us a message</div>
+                    <p></p>
+                    <form action="# ">
+                        <div class="input-box ">
+                            <input type="text " placeholder="Enter your name ">
+                        </div>
+                        <div class="input-box ">
+                            <input type="text " placeholder="Enter your email ">
+                        </div>
+                        <div class="input-box message-box ">
+                            <textarea name=" " placeholder="Enter your message " id=" " cols="30 " rows="10 "></textarea>
+                        </div>
+                        <div class="button ">
+                            <input type="button" value="Send Now ">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d31374.58486973226!2d7.413504770074316!3d10.592999416545574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d10.6094634!2d7.4411644!4m5!1s0x11b2cb526701f3d9%3A0xca499d63506c1830!2slayers%20of%20truth!3m2!1d10.580027999999999!2d7.4208725!5e0!3m2!1sen!2sng!4v1678314598862!5m2!1sen!2sng"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
+
     </main>
     <hr class="mx-5 mt-5 ">
-    <footer class=" container py-3">
-        <div class="d-flex text-center d-flex">
-            <div class="footer_logo"></div>
+    <footer class=" container py-3 ">
+        <div class="d-flex text-center d-flex ">
+            <div class="footer_logo "></div>
             <h4>@ Layers Of Truth</h4>
         </div>
-        <div class=" socials">
+        <div class=" socials ">
             <ul class="d-flex list-unstyled ">
-                <li class="ms-3">
-                    <a class="text-muted" href="#"><i class="fa fa-square-twitter"></i>
+                <li class="ms-3 ">
+                    <a class="text-muted " href="# "><i class="fa fa-square-twitter "></i>
                     </a>
                 </li>
-                <li class="ms-3">
-                    <a class="text-muted" href="#"><i class="fa fa-facebook-f"></i>
+                <li class="ms-3 ">
+                    <a class="text-muted " href="# "><i class="fa fa-facebook-f "></i>
                     </a>
                 </li>
-                <li class="ms-3">
-                    <a class="text-muted" href="#"><i class="fa fa-instagram-square"></i>
+                <li class="ms-3 ">
+                    <a class="text-muted " href="# "><i class="fa fa-instagram-square "></i>
                     </a>
                 </li>
             </ul>
         </div>
     </footer>
+    <script src="assets/js/scripts.js "></script>
 </body>
+
+</html>
 
 </html>
