@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-=%of=dlp=wh8*zs1q40**@gf&)cs_+8t=-27j@ceu%-r5-cryr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
+AUTH_USER_MODEL = 'user.User'
 
 # Application definition
 
@@ -37,9 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
+    # USER
+    'user.apps.UserConfig',
+    'siloam.app.SiloamConfig',
+    
     # Packages
     'rest_framework',
+
+   
 ]
 
 MIDDLEWARE = [
