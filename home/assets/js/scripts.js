@@ -4,7 +4,7 @@ const content1 = document.getElementById('content1');
 const content2 = document.getElementById('content2');
 
 content2.style.display = "none";
-tab2.classList.add('active')
+tab1.classList.add('active')
 
 function opentab1() {
     content1.style.display = "contents"
