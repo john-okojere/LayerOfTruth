@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/css/form.css">
+</head>
+<body>
+
+    <div class="formContainer">
+        <div class="SignUpContainer">
+            <div class="formMenu">
+                <div>
+                    <button class="btnCreateAccount active">Create Account</button>
+                          
+                       </div>
+                       <button class="btnLOgIN">Login</button>
+                       <div>
+            </div>
+        
+          
+            </div>
+            <div class="SignUpFormInput">
+               <div class="textForm" > <h2> Layers Of Truth Account</h2></div>
+                <div class="formSplit">
+                    <div> <input type="text" placeholder=" First Name" class="FromControl1"></div>
+                    <div> <input type="text" placeholder="LastName" class="FromControl1"></div>
+                </div>
+                
+                <div> <input type="text" placeholder="Email Address" class="FromControl"></div>
+               <div class="formSplit">
+                <div> <input type="text" placeholder="Birthday" class="FromControl1"></div>
+                <div> <select class="FromControl1" name="" id="">
+                    <option class="optionControl" value="">Gender</option>
+                    <option class="optionControl" value="">Male</option>
+                
+
+                    <option class="optionControl" value="">Female</option>
+                
+                </select></div>
+
+               </div>
+                <div> <input type="text" placeholder="Phone Number" class="FromControl"></div>
+                <div> <input type="text" placeholder="Set A Password" class="FromControl"></div>
+    
+    
+            </div>
+            <div class="btn-submitAccount"><button class="btnCreateAccount2 active"> Create Account</button></div>
+            
+
+
+
+
+
+
+            <div class="LogInContaine hid">
+                <div class="textForm2" > <h2> Login to Account</h2></div>
+
+                
+                <div> <input type="text" placeholder=" User Name" class="FromControl"></div>
+                <div> <input type="text" placeholder="password" class="FromControl"></div>
+                <div class="btn-LogInAccount"><button class="btnLOgIN2 active"> LogIn</button></div>
+    
+    
+            </div>
+        </div>
+       
+
+    </div>
+    
+    <script>
+        const SignUpContainer = document.querySelector('.SignUpContainer');
+        const  btnCreateAccount = document.querySelector('.btnCreateAccount');
+        const btnLOgIN = document.querySelector('.btnLOgIN');
+        const LogInContaine = document.querySelector('.LogInContaine');
+        const SignUpFormInput = document.querySelector('.SignUpFormInput');
+        const btnsubmitAccount = document.querySelector('.btn-submitAccount');
+
+
+
+        btnLOgIN.addEventListener('click',function(){
+            // SignUpContainer.classList.add('hid')
+            LogInContaine.classList.remove('hid');
+            SignUpFormInput.classList.add('hid');
+            btnsubmitAccount.classList.add('hid');
+            btnCreateAccount.classList.remove('active')
+            SignUpFormInput.style.opacity = 0;
+
+
+
+            let opacity = 0;
+                    // Set an interval to increase the opacity every 100ms
+                    const intervalId = setInterval(function() {
+                    opacity += 0.1;
+                    LogInContaine.style.opacity = opacity;
+                    if (opacity >= 1) {
+                        // Stop the interval once the element is fully opaque
+                        clearInterval(intervalId);
+                    }
+                    }, 80);
+
+
+                     
+
+
+
+            
+            
+            btnLOgIN.classList.add('active')
+            btnsubmitAccount.classList.remove('btn-submitAccount')
+
+
+        })
+        btnCreateAccount.addEventListener('click',function(){
+            
+            LogInContaine.style.opacity = 0;
+
+
+            let opacity = 0;
+                    // Set an interval to increase the opacity every 100ms
+                    const intervalId = setInterval(function() {
+                    opacity += 0.1;
+                    SignUpFormInput.style.opacity = opacity;
+                    if (opacity >= 1) {
+                        // Stop the interval once the element is fully opaque
+                        clearInterval(intervalId);
+                    }
+                    }, 80);
+
+            
+
+
+
+
+            LogInContaine.classList.add('hid');
+            SignUpFormInput.classList.remove('hid');
+            btnsubmitAccount.classList.remove('hid');
+            btnCreateAccount.classList.add('active')
+            btnLOgIN.classList.remove('active')
+            btnsubmitAccount.classList.add('btn-submitAccount')
+
+            
+        })
+
+
+    </script>
+</body>
+</html>
