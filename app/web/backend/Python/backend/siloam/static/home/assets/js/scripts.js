@@ -20,3 +20,12 @@ function opentab2() {
     tab2.classList.add('active')
     tab1.classList.remove('active')
 }
+$("#menu_content").hide();
+$('#menu_icon').click(function(e) {
+    e.preventDefault();
+    $("#menu_content").show();
+});
+$('#menu_close').click(function(e) {
+    e.preventDefault();
+    $("#menu_content").hide();
+});
