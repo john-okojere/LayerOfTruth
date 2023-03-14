@@ -21,3 +21,7 @@ class UserDetailAPI(APIView):
 class RegisterUserAPIView(generics.CreateAPIView):
     permission_classes = (AllowAny,)
     serializer_class = RegisterSerializer
+
+
+def homepage(request):
+    return render(request, 'home/index.html')

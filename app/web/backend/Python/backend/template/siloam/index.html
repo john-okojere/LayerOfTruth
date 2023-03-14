@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILOAM 2023</title>
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'siloam/assets/imgs/LOT 3D GOLD.png' %}" />
+    <link rel="stylesheet" href="{% static 'siloam/assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body class="container pt-5">
+    <header>
+        <nav class="d-flex container">
+            <div class="nav-header">
+                <div class="main_logo"></div>
+            </div>
+            <div class="nav-items d-flex">
+                <ul class="list-group-horizontal d-flex p-3 m-0 ">
+                    <li class="list-group-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{% url 'siloam'  %}">Siloam 2023</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#M_R">Media & Resources</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#OurMinistries">Sign In | Sign Up</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="menu">
+                <div class="menu_icon " id="menu_icon"><i class=" fas fa-bars "></i></div>
+                <a class="btn btn-success " href="# ">Give Online</a>
+                <div id="menu_content">
+                    <div id="menu_background " class="menu_background " style="background-color: rgba(0, 0, 0, 0.849);overflow: hidden; height: 100%; width: 100vw; position: fixed; top: 0;left: 0; z-index: 8; "></div>
+                    <div class="menu_list slide-bl">
+                        <div class="text-right" id="menu_close" style="text-align: right;"><i class="fa fa-x"></i></div>
+                        <ul class="list-group p-3 m-0 ">
+                            <li class="list-group-item ">
+                                <a href="../home/index.html">Home</a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="# ">Blog</a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="../siloam/index.html ">Siloam 2023</a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="#M_R ">Media & Resources</a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="#OurMinistries ">Sign In | Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="event_info container ">
+            <div class="info ">
+                <div class="header1 ">
+                    <i>Presents</i>
+                    <h1>SILOAM 2023</h1>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, id ipsam? Repellat voluptatem odio consequatur ipsum, veniam quas quae exercitationem minima magnam, harum, maxime cupiditate deleniti debitis vitae vero maiores.</p>
+                <div class="sub-info ">
+                    <div class="d-flex subscribe_form ">
+                        <input class="form_input subscribe w-100 " type="email " placeholder="Enter Email ">
+                        <h3 class="msgEmailSubscription "></h3>
+                        <button class="reg ">Subscribe</button>
+                    </div>
+                    <small>Get Updates Related to the event</small>
+                    <div class="header-footer__social ">
+                    </div>
+                </div>
+
+            </div>
+            <div class="home_img ">
+                <img src="{% static 'siloam/assets/imgs/home_img.jpg'%} " alt=" ">
+            </div>
+        </section>
+
+        <section class="event_detail ">
+            <div class="countdown ">
+                <h4>Anticipating siloam 2023! join the countdown</h4>
+                <h1>
+                    <div class="months ">00 <small>months</small></div>
+                    <div class="days ">00 <small>days</small></div>
+                    <div class="hours ">00 <small>hours</small></div>
+                    <div class="seconds ">00 <small>seconds</small></div>
+                </h1>
+            </div>
+            <div class="event-details ">
+            </div>
+        </section>
+
+
+        <section class="bookings d-flex ">
+            <div class="event_detail" style="text-align-last: center;">
+                <img src="{% static 'siloam/assets/imgs/SILOAM REDO(PASTOR OSHOMA).png' %} " style="width: 100%; max-width: 300px; border-radius: 15px;margin: 20px 0; " alt=" ">
+            </div>
+            <div class="form ">
+                <form id="register" method="post" action="">
+                    {% csrf_token %}
+                    <div class="form_text py-3 ">
+                        <h1>Online Registration</h1>
+                        <p>Do you want to attend Siloam 2023 conference, please fill the form below for reservation.<br> We'll be expecting you.</p>
+
+                    </div>
+                    <div class="form-group ">
+                        <label for="full_name">Full Name</label>
+                        <input id="full_name" class="form-control" name="full_name" placeholder="Enter Your Full Name " type="text ">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control w-100" name="phone" placeholder="Enter Your Phone Number " type="text ">
+                    </div>
+                    <div class="d-flex form-group">will You be in need of Accomodation? <input type="checkbox" name="accomodation"></div>
+                    <div class="form-group ">
+                        <input class="form-control w-100 " placeholder="Where are you coming from? " name="location" type="text ">
+                    </div>
+                    <div class="reg-btn-container ">
+                        <button type="submit" class="reg regsiter-btn mt-2 px-3 py-2 fw-bolder fs-3 ">Register</button>
+                    </div>
+                </form>
+            </div>
+            <br>
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <hr>
+    <footer class="">
+        <div class="d-flex text-center  px-3 ">
+            <div class="footer_logo "><img src="{% static 'siloam/assets/imgs/LOT 3D GOLD.png' %}" style="width: 60px; border-radius: 15px;" alt=" "> Siloam 2023</div>
+            <p>Copyright @Layers Of Truth</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'siloam/assets/JS/jquery-3.5.1.min.js'%}"></script>
+    <script src="{% static 'siloam/assets/JS/index.js'%} "></script>
+    <script>
+        $("#menu_content").hide();
+        $('#menu_icon').click(function(e) {
+            e.preventDefault();
+            $("#menu_content").show();
+        });
+        $('#menu_close').click(function(e) {
+            e.preventDefault();
+            $("#menu_content").hide();
+        });
+    </script>
+
+</body>
+
+</html>
