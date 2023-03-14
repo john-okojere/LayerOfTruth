@@ -38,7 +38,7 @@
              border: none;
              border-radius: 6px;
              color: white;
-             background-color: #e66b00;
+             background-color: #8A5D04;
              height: 100%;
          }
          /* =====================main styling=============================== */
@@ -76,7 +76,7 @@
          }
          
          .subscribe.form_input {
-             border: 2px #e66b00 solid;
+             border: 2px #8A5D04 solid;
              border-right: none;
          }
          
@@ -210,7 +210,7 @@
              width: 150px;
              height: 30px;
              color: white;
-             background: #e66b00;
+             background: #8A5D04;
              font-weight: 600;
              border-radius: 7px;
              border: none;

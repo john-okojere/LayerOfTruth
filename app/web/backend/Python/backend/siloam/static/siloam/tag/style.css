@@ -87,11 +87,11 @@
     }
     
     .guest .details {
-        background: rgb(124, 91, 6);
+        background: #8A5D04;
     }
     
     .worker .card {
-        border: 5px rgb(124, 91, 6) solid;
+        border: 5px #8A5D04 solid;
         background: #000;
     }
     
@@ -110,11 +110,11 @@
     }
     
     .pastor .details {
-        background: rgb(124, 91, 6);
+        background: #8A5D04;
     }
     
     .pastor .details {
-        background: rgb(124, 91, 6);
+        background: #8A5D04;
     }
     
     .pastor .category {
@@ -156,7 +156,7 @@
         letter-spacing: 4px;
         font-family: Arial, Helvetica, sans-serif;
         height: 20px;
-        /* color: rgb(124, 91, 6); */
+        /* color: #8A5D04; */
     }
     /* .tags{
     magin: 5px;
