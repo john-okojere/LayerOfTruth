@@ -1,39 +1,26 @@
-body{
-    padding: 0px;
-    margin: 0px;
-}
-.profileDashBoard{
-    margin-left: 30px;
-    
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
 }
 .containDashBoard{
     /* background-color: red; */
     /* border: 1px solid gold; */
     box-shadow: 1px 1px 10px rgb(222, 221, 221), 1px 1px 10px  rgb(222, 221, 221) ;
-    height: 300px;
     background-color: rgb(255, 255, 255);
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+padding: 1rem;
     display: grid;
-    width: 45.9Vw;
-    height: 15Vh;
-    margin-top: 30px;
-    /* justify-content: center; */
-    margin-left: 60px;
-    grid-template-columns: 300px 200px;
-    /* grid-template-columns: repeat(auto-fit,minmax(510px,150px)); */
-
+    grid-template-columns: 80% 20%;
 }
-
+.containMenu div{padding: 5px;}
 .containDashBoard h2 {
     color: black;
-    margin-bottom:-10px ;
 }
 .fa-user-circle{
    font-size: 60px;
    margin-top: 15px;
-   margin-left: 90px;
  color: rgb(182, 161, 1);
    
 }
@@ -41,10 +28,9 @@ body{
     display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(75, 75, 75);
-    width: 20Vw;
-    margin-left: 30px;
-    grid-template-columns: 200px 100px;
-    padding: 20px;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    padding: 10px;
     box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
 
 }
@@ -59,48 +45,63 @@ body{
 }
 .containMenu{
     display: grid;
-    margin-left: 30px;
-    margin-top: 60px;
-    grid-template-columns: 300px 300px;
-    grid-gap: 30px;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
     
 }
 .container{
     display: grid;
-    grid-template-columns: 750px 400px;
-}
-.sideOptions{
-    /* background-color: red; */
-    padding-top: 30px;
+    grid-template-columns: 59% 39%;
+    grid-gap: 2%;
+    margin-left: 1.5%;
+    padding: 2rem;
 }
 .settings{
    
-    width: 25Vw;
     padding-left: 30px;
 
     padding-top: 20px;
-    margin-left: 30px;
     height: 280px;
     margin-bottom: 20px;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 4%;
     box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
 
 }
 .menusSide{
     display: grid;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 26Vw;
-    margin-left: 30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 30px;
-    height: 25Vh;
-    margin-top: 10px;
-    margin-top: 70px;
-    grid-template-columns: 200px 100px;
+    height: 30Vh;
+    margin-left: 5%;
+    width: 90%;
+    grid-template-columns: 60% 40%;
     box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
 
 
 }
 .menusSide i {
     margin-top: 22px;
+}
+
+.ViewMore{
+    margin-top: 20px;
+    display: grid;
+    margin-left: 5%;
+  
+    
+    grid-template-columns: 110% 40%;
+}
+.ViewMore p{
+    font-size: 16px;
+    margin-left: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ViewMore i {
+    font-size: 16px;
+    margin-left: 20%;
+
 }
 .fa-long-arrow-right{
     color: rgb(182, 161, 1);
@@ -110,8 +111,6 @@ body{
 }
 
 .SettingsMenu{
-    margin-top: -60px;
-    margin-left: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .fa-cog{
@@ -132,7 +131,6 @@ body{
 }
 .cog3{
     color: rgb(207, 176, 5);
-    margin-left: 30px;
     margin-top: 2px;
     margin-bottom: 10px;
    
@@ -150,14 +148,20 @@ body{
 .fa-arrow-circle-right{
     font-size: 30px;
     color: rgb(219, 187, 9);
-    margin-left: 20px;
     margin-top: 30px;
 }
-.ViewMore{
-    margin-top: 20px;
-    margin-left: 40px;
-}
-.ViewMore p{
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@media screen and (max-width:860px) {
+    .container{display: block;} 
+    .profileDashBoard .containMenu{display: block;}   
+    .menusSide{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .settings{
+        width: 100%;
+        margin-left: 0%;
+
+    }
+
 }
