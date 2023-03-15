@@ -1,0 +1,17 @@
+.departmentCard{
+    height: 400px;
+    width:800px;
+    margin-top: 90px;
+    /* background-color: grey; */
+    border: 1px solid black;
+    background-image: url(gjg.jpg);
+}
+
+.img{
+    background-color: red;
+    height:1px;
+    width: 570px;
+    margin-left: 150px;
+    margin-top: 200px;
+    transform: rotate(45deg);
+}
