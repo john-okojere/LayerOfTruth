@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import registerSiloam, SiloamTag
-from django.contrib.auth.views import LoginView, LogoutView
+from .views import registerSiloam, SiloamTag,siloamtags,siloamDashboard,emailContact
 
 urlpatterns = [
     path('register/', registerSiloam, name="siloam"),
-    path('Login/', LoginView.as_view(template_name="account/form.html"), name="login" ),
-    path('Logout/', LogoutView.as_view(), name="logout" ),
+    path('siloam-tag/<int:pk>/', SiloamTag, name="siloam-tag"),
+    path('siloam-tags/', siloamtags, name="siloam-tags"),
+    path('Dashboard/', siloamDashboard, name="siloam-dashboard"),
+    path('email/', emailContact, name="siloam-subscribe")
 ]
 

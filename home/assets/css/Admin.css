@@ -1,75 +1,83 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
 }
-.containDashBoard{
+
+.containDashBoard {
     /* background-color: red; */
     /* border: 1px solid gold; */
-    box-shadow: 1px 1px 10px rgb(222, 221, 221), 1px 1px 10px  rgb(222, 221, 221) ;
+    box-shadow: 1px 1px 10px rgb(222, 221, 221), 1px 1px 10px rgb(222, 221, 221);
     background-color: rgb(255, 255, 255);
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-padding: 1rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 80% 20%;
 }
-.containMenu div{padding: 5px;}
+
+.containMenu div {
+    padding: 5px;
+}
+
 .containDashBoard h2 {
     color: black;
 }
-.fa-user-circle{
-   font-size: 60px;
-   margin-top: 15px;
- color: rgb(182, 161, 1);
-   
+
+.fa-user-circle {
+    font-size: 60px;
+    margin-top: 15px;
+    color: rgb(182, 161, 1);
 }
-.menus{
+
+.menus {
     display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(75, 75, 75);
     width: 100%;
     grid-template-columns: 60% 40%;
     padding: 10px;
-    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
-
+    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px rgb(247, 247, 247);
 }
+
 .menus p {
     font-size: 13px;
 }
-.menus h3{
+
+.menus h3 {
     color: rgb(87, 86, 86);
 }
+
 .menus i {
     margin-top: 22px;
 }
-.containMenu{
+
+.containMenu {
     display: grid;
     grid-template-columns: 49% 49%;
     grid-gap: 2%;
-    
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 59% 39%;
     grid-gap: 2%;
     margin-left: 1.5%;
     padding: 2rem;
 }
-.settings{
-   
-    padding-left: 30px;
 
+.settings {
+    padding-left: 30px;
     padding-top: 20px;
     height: 280px;
     margin-bottom: 20px;
     margin-left: 5%;
     width: 90%;
     margin-bottom: 4%;
-    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
-
+    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px rgb(247, 247, 247);
 }
-.menusSide{
+
+.menusSide {
     display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 30px;
@@ -77,91 +85,87 @@ padding: 1rem;
     margin-left: 5%;
     width: 90%;
     grid-template-columns: 60% 40%;
-    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
-
-
+    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px rgb(247, 247, 247);
 }
+
 .menusSide i {
     margin-top: 22px;
 }
 
-.ViewMore{
+.ViewMore {
     margin-top: 20px;
     display: grid;
     margin-left: 5%;
-  
-    
     grid-template-columns: 110% 40%;
 }
-.ViewMore p{
+
+.ViewMore p {
     font-size: 16px;
     margin-left: 8%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .ViewMore i {
     font-size: 16px;
     margin-left: 20%;
+}
 
-}
-.fa-long-arrow-right{
-    color: rgb(182, 161, 1);
-}
-.styletextCard{
+.fa-long-arrow-right {
     color: rgb(182, 161, 1);
 }
 
-.SettingsMenu{
+.styletextCard {
+    color: rgb(182, 161, 1);
+}
+
+.SettingsMenu {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.fa-cog{
+
+.fa-cog {
     font-size: 35px;
-    
-}
-.cog1{
-    color: black;
-   
 }
 
-.cog2{
+.cog1 {
+    color: black;
+}
+
+.cog2 {
     color: rgb(207, 176, 5);
     font-size: 50px;
     margin-top: 10px;
     margin-right: 9px;
-
 }
-.cog3{
+
+.cog3 {
     color: rgb(207, 176, 5);
     margin-top: 2px;
     margin-bottom: 10px;
-   
 }
-.cog4{
+
+.cog4 {
     font-size: 50;
     color: black;
-
 }
 
-.settingsBar1{
+.settingsBar1 {
     text-align: end;
     margin-right: 30;
 }
-.fa-arrow-circle-right{
-    font-size: 30px;
-    color: rgb(219, 187, 9);
-    margin-top: 30px;
-}
 
 @media screen and (max-width:860px) {
-    .container{display: block;} 
-    .profileDashBoard .containMenu{display: block;}   
-    .menusSide{
+    .container {
+        display: block;
+    }
+    .profileDashBoard .containMenu {
+        display: block;
+    }
+    .menusSide {
         width: 100%;
         margin-left: 0%;
     }
-    .settings{
+    .settings {
         width: 100%;
         margin-left: 0%;
-
     }
-
 }
