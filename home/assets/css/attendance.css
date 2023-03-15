@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    background: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+     /* display: flex; */
+     margin: 50px;
+     background: #000;
+     color: aliceblue ;
+     border: 2px solid goldenrod ;
+     border-radius: 15px;
+     /* padding: 0px 15px; */
+           
+}
+.title{
+    display: flex;
+    
+    /* justify-items: center; */
+    justify-content: space-between;
+    padding: 0px 110px;
+    
+}
+.title>label>input{
+    
+    
+    border: none;
+    border-radius:  5px 0px 0px 5px;
+    height:40px;
+    
+        
+}
+.title>button{
+    background: gray;
+}
+::placeholder{
+    font-weight: 500;
+    color: goldenrod;
+
+}
+
+
+.table-head{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    /* padding: 2px; */
+    /* border: 1px solid black; */
+    /* width: 100%; */
+
+    background-color:   ;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+
+
+
+}
+
+.table-head>div{
+    padding:1em;
+    text-align: center;
+    border-radius: 10px;
+    /* border-color: black; */
+     
+     
+}
+
+.table-body{
+    display: grid;
+    /* width: 100%; */
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    /* background-color: blue; */
+}
+.t-body>div{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    
+    /* background-color: aqua; */
+    /* display: flex; */
+}
+
+.time{
+    display: grid;
+    grid-template-columns: 50% 50%;
+} 
+
+.create{
+    background: goldenrod;
+    text-align: center;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -content: center;
+    border-radius: 5px;
+    height: 60px;
+
+}
