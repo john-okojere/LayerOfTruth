@@ -42,7 +42,7 @@
     }
 </style>
 <div class="mt-5">
-    <h1 class="text-center">{{type}}</h1>
+    <h1 class="text-center">Transport</h1>
     <h2 class="text-center">Siloam 2023 Card Verification</h2>
     <div class="p-3">
         <div id="reader"></div>
@@ -65,7 +65,7 @@
         console.log(result);
 
 
-        fetch('/verify/card/' + result).then(response => response.json()).then((data) => {
+        fetch('/verify/transport-card/' + result).then(response => response.json()).then((data) => {
 
             document.getElementById('result').innerHTML = ` 
                 <h2> Success! </h2> 

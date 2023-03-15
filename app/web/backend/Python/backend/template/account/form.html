@@ -26,6 +26,14 @@
 
 
         </div>
+        
+        {% if messages %}
+        {% for message in messages %}
+        <div class="mt-3 alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    {% endif %}
         <form method="post" action="{% url 'register' %}" class="SignUpFormInput hid">
             <div class="textForm">
                 <h2>Create a Layers Of Truth Account</h2>

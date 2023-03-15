@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
+from django.contrib.auth.decorators import login_required
 from rest_framework.response import Response
 from .serializers import UserSerializer,  RegisterSerializer
 from django.contrib.auth import login, authenticate
@@ -9,7 +10,7 @@ from .forms import RegisterForm
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import generics
 
-
+from django.contrib import messages
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
@@ -28,22 +29,27 @@ class RegisterUserAPIView(generics.CreateAPIView):
 def homepage(request):
     return render(request, 'home/index.html')
 
+@login_required
 def profile(request):
     return render(request, 'account/profile.html')
 
 def signup(request):
-    if request.method == 'POST':
-        form = RegisterForm(request.POST)
-        if form.is_valid():
-            rform = form.save(commit=False)
-            rform.role = "USER"
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('/')
+    if request.user:
+        return redirect('profile')
     else:
-        form = RegisterForm()
-    return render(request, 'account/form.html', {'form': form})
+        if request.method == 'POST':
+            form = RegisterForm(request.POST)
+            if form.is_valid():
+                rform = form.save(commit=False)
+                rform.role = "USER"
+                form.save()
+                username = form.cleaned_data.get('username')
+                raw_password = form.cleaned_data.get('password1')
+                user = authenticate(username=username, password=raw_password)
+                login(request, user)
+                messages.success(request, f"New account created: {username}")
+                return redirect('/')
+        else:
+            form = RegisterForm()
+        return render(request, 'account/form.html', {'form': form})
 

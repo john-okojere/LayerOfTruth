@@ -31,13 +31,18 @@ class Attendee(models.Model):
 
 class Attendance(models.Model):
     attendee = models.OneToOneField(Attendee, on_delete=models.CASCADE)
-    time_in = models.DateTimeField(auto_now=True)
     accomodation = models.BooleanField(default=False)
     food = models.BooleanField(default=False)
     transport = models.BooleanField(default=False)
+    time_in = models.DateTimeField(auto_now=True)
     time_out = models.DateTimeField(null=True)
 
     def __str__(self) -> str:
         return f'{self.attendee.full_name.title()} seat number {self.attendee.seat_number}.'
 
 
+class Contact(models.Model):
+    email = models.EmailField()
+    created = models.DateTimeField(auto_now=True)
+    def __str__(self):
+        return f'{self.email}'

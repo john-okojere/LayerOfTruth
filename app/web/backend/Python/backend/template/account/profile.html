@@ -1,147 +1,211 @@
 {% extends "base.html" %} {% load static %} {% block main %}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css" integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'user/profile.css' %}">
-    <div class="container">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css" integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="{% static 'user/profile.css' %}">
+<div class="container">
 
-        <div splitDashboard>
-            <div class="containDashBoard">
-                <div class="profileDashBoard">
-                    <h2> Admin Dashboard </h2>
-                    <p>here is your overview</p>
+    <div class="d-block">
+        <div class="containDashBoard">
+            <div class="profileDashBoard">
+                <div class="d-flex">
+
+                    <div>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    </div>
+                    <div>
+                        <h2> {{user.role |title}} Dashboard </h2>
+                        <p>here is your overview</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
-    
+                <br>
+                <div class="containMenu">
+                    <div>
+                        User Name: {{user.username | title}}
+                    </div>
+                    <div>
+                        First Name: {{user.first_name | title}}
+                    </div>
+                    <div>
+                        Last Name: {{user.first_name | title}}
+                    </div>
+                    <div>
+                        phone: {{user.phone | title}}
+                    </div>
+                    <div>
+                        Role:{{user.role | title}}
+                    </div>
+                    <div>
+                        Email : {{user.email | title}}
+                    </div>
                 </div>
-    
-               
             </div>
-    
-            <div class="containMenu">
-                <div class="menus">
-                  <div><h3>Members</h3></div>  
-                  <div><i class="fa fa-users" aria-hidden="true"></i> </div>
-                  <div>
-                 <p class="styletextCard">Total Members</p>   
-                 <p > 123450</p>
+        </div>
+
+        <div class="containMenu">
+            <div class="menus">
+                <div>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <h3>Members</h3>
+                </div>
+
+                <div>
+                    <p class="styletextCard">Total Members</p>
+                    <p> 123450</p>
                 </div>
                 <div>
                     <p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </p>
                 </div>
-    
+
+            </div>
+            <div class="menus">
+                <div>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <h3>Account</h3>
                 </div>
-                <div class="menus">
-                    <div><h3>Giving</h3></div>  
-                    <div> 
-                        <i class="fa fa-heart" aria-hidden="true"></i> 
-                       
-    
-    
+
+                <div>
+                    <p class="styletextCard">Total overView</p>
+                    <p>$96810</p>
+                </div>
+                <div>
+                    <p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+
+            </div>
+            <div class="menus">
+                <a href="{% url 'siloam-dashboard' %}">
+                    <div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <h3>Siloam</h3>
                     </div>
                     <div>
-                   <p class="styletextCard">Total overView</p>   
-                   <p>$96810</p>
-                  </div>
-                  <div>
-                      <p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                      </p>
-                  </div>
-      
-                  </div>
-                  <div class="menus">
-                    <div><h3>Events</h3></div>  
-                    <div> <i class="fa fa-calendar" aria-hidden="true"></i> </div>
-                    <div>
-                   <p class="styletextCard">Total Events</p>   
-                   <p> 30</p>
-                  </div>
-                  <div>
-                      <p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                      </p>
-                  </div>
-      
-                  </div>
-                  <div class="menus">
-                    <div><h3>Groups</h3></div>  
-                    <div> <i class="fa fa-archive" aria-hidden="true"></i>
+                        <p class="styletextCard">Total participant</p>
+                        <p> 30</p>
                     </div>
                     <div>
-                   <p class="styletextCard">Total Groups</p>   
-                   <p>50</p>
-                  </div>
-                  <div>
-                      <p>
+                        <p>
+                            <a href="{% url 'siloam-dashboard' %}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="menus">
+                <div>
+                    <i class="fa fa-clipboard-check" aria-hidden="true"></i>
+                    <h3>Attendance</h3>
+                </div>
+                <div>
+                    <p class="styletextCard">Total Attendance</p>
+                    <p> 30</p>
+                </div>
+                <div>
+                    <p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+
+            </div>
+            <div class="menus">
+                <div>
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <h3>Workers</h3>
+                </div>
+                <div>
+                    <p class="styletextCard">Total Workers</p>
+                    <p> 30</p>
+                </div>
+                <div>
+                    <p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+
+            </div>
+            <div class="menus">
+                <div>
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                    <h3>Department</h3>
+                </div>
+
+                <div>
+                    <p class="styletextCard">Total Department</p>
+                    <p>50</p>
+                </div>
+                <div>
+                    <p>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-    
-                      </p>
-                  </div>
-      
-                  </div>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sideOptions">
+
+        <div class="settings">
+            <div class="d-flex">
+                <div class="settingsBar1">
+                    <i class="fa fa-cog  cog2" aria-hidden="true"></i>
+
+                </div>
+                <div class="SettingsMenu">
+                    <h2>Settings</h2>
+                    <p>Manage activities </p>
+                </div>
+            </div>
+            <ul class="list-group p-3">
+                <li class="list-group my-2 text-dark">Change Password</li>
+                <li class="list-group my-2 text-dark">Change Password</li>
+                <li class="list-group my-2 text-dark">
+                    <a href="{% url 'logout' %}" class="btn btn-outline-danger">Log Out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="forms">
+            <div class="d-flex ">
+                <div class="settingsBar1">
+                    <i class="fa fa-pen-square" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <h3>Forms</h3>
+                    <p>fill a form</p>
+                </div>
+            </div>
+            <div class="menusSide py-4">
+                <div>
+                    <p>Attendance </p>
+                    <i class="fa fa-clipboard-list" aria-hidden="true"></i> </div>
+                <div>
+                    <p>Fund acquisition</p>
+                    <i class=" fa fa-money-bill-wave "></i>
+                </div>
+                <div>
+                    <p>Join Department </p>
+                    <i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                <div>
+                    <p> Create Department </p>
+                    <i class="fa fa-briefcase" aria-hidden="true"></i></div>
             </div>
         </div>
 
-       
-        <div class="sideOptions">
 
-            <div class="settings">
-                <div class="settingsBar1">
-                    <div>
-                        <i class="fa fa-cog cog1" aria-hidden="true"></i>
-    
-                    </div>
-    
-                    <div>
-                        <i class="fa fa-cog  cog2" aria-hidden="true"></i>
-    
-                    </div>
-                </div>
-             <div class="SettingsMenu">
-                <h2>Settings</h2>
-                <p>click to manage activities  </p>
-                <p> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
-
-             </div>
-
-              
-                <div>
-                    <i class="fa fa-cog cog3" aria-hidden="true"></i>
-
-                </div>
-
-                <div>
-                    <i class="fa fa-cog cog4" aria-hidden="true"></i>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="menusSide">
-                <!-- <div><h3>Members</h3></div>  
-                <div> icon </div>
-                <div>
-               <p>Total Members</p>   
-               <p> 123450</p>
-              </div>
-              <div>
-                  <p>icon</p> -->
-                  <div class="ViewMore"> 
-
-                    <p>View More <span> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    </span></p> 
-                  </div>
-                
-              </div>
-  
-              </div>
-        </div> 
 
     </div>
-    {% endblock main %}
+</div>
+
+</div>
+{% endblock main %}
