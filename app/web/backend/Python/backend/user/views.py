@@ -28,11 +28,15 @@ class RegisterUserAPIView(generics.CreateAPIView):
 def homepage(request):
     return render(request, 'home/index.html')
 
+def profile(request):
+    return render(request, 'account/profile.html')
 
 def signup(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
+            rform = form.save(commit=False)
+            rform.role = "USER"
             form.save()
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
