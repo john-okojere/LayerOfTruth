@@ -1,0 +1,331 @@
+         .container {
+             background-color: black !important;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             color: white !important;
+         }
+         
+         .logo img {
+             width: 200px;
+         }
+         
+         ul {
+             margin: 0 !important;
+         }
+         
+         ul>li {
+             list-style-type: none;
+         }
+         
+         a {
+             text-decoration: none !important;
+             color: white !important;
+         }
+         
+         header {
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+         }
+         
+         .menu>ul {
+             display: flex;
+             align-items: center;
+             gap: 50px
+             /* justify-content: space-between; */
+         }
+         
+         .reg {
+             border: none;
+             border-radius: 6px;
+             color: white;
+             background-color: #8A5D04;
+             height: 100%;
+         }
+         /* =====================main styling=============================== */
+         /* section1 */
+         
+         .event_info {
+             display: flex;
+             justify-content: space-between;
+             padding: 3rem 0;
+             margin: 2rem 0;
+         }
+         
+         .info>p {
+             /* color: goldenrod; */
+             margin: 2rem 0;
+         }
+         
+         .info {
+             max-width: 580px;
+             /* align-self: center; */
+         }
+         
+         .d-flex {
+             display: flex;
+             justify-content: space-between;
+         }
+         
+         .form-group {
+             margin: 10px 0;
+         }
+         
+         .sub-info>input {
+             border-top-left-radius: 10px;
+             border-bottom-left-radius: 10px;
+         }
+         
+         .subscribe.form_input {
+             border: 2px #8A5D04 solid;
+             border-right: none;
+         }
+         
+         a.reg {
+             text-align: center !important;
+         }
+         
+         .sub-info>a.reg {
+             text-align: center !important;
+             border-top-left-radius: 0 !important;
+             border-bottom-left-radius: 0 !important;
+         }
+         
+         .sub-info {
+             width: 100%;
+         }
+         
+         .subscribe_form {}
+         
+         .subscribe_form>input {
+             border-top-right-radius: 0px;
+             border-bottom-right-radius: 0px;
+             border: none;
+             font-size: 20px;
+             padding: 10px;
+         }
+         
+         .subscribe_form>button {
+             border-top-left-radius: 0px;
+             border-bottom-left-radius: 0px;
+             border: none;
+             padding: 10px;
+             font-weight: 500;
+             font-size: 20px;
+         }
+         
+         .home_img {}
+         
+         .home_img>img {
+             width: 350px;
+             height: 320px;
+             border-radius: 70% 55% 67% 20%;
+         }
+         
+         .event-details {
+             display: flex;
+             justify-content: space-between;
+             margin-top: -20px;
+         }
+         
+         .event-details img {
+             /* padding: 0px; */
+             text-transform: capitalize;
+         }
+         
+         .countdown {
+             background-color: rgb(17, 16, 16);
+             border-radius: 10px;
+             padding: 1rem;
+             margin: 1rem;
+         }
+         
+         .event-details>h3 {
+             color: goldenrod;
+         }
+         
+         .countdown h1 {
+             display: flex;
+             justify-content: space-around;
+             margin: 2.5rem 0;
+             font-size: 2rem;
+             text-align: center;
+         }
+         
+         .countdown>h4 {
+             padding: 10px;
+             word-spacing: 2px;
+             text-transform: uppercase;
+             letter-spacing: 1px;
+         }
+         
+         .bookings {
+             align-items: center;
+             min-height: 100vh;
+             padding: 1rem;
+         }
+         
+         .form {
+             padding: 2rem;
+             border-color: white;
+             background: rgb(17, 16, 16);
+             box-shadow: 8px 8px 8px rgba(99, 99, 99, 0.25);
+             border-radius: 15px;
+         }
+         
+         .form>.form_text {
+             text-align: left;
+             line-height: 1.5rem;
+         }
+         
+         .d-flex {
+             align-items: center;
+         }
+         
+         .lo_f {
+             align-items: baseline;
+         }
+         
+         .form_input {
+             border-radius: 5px;
+             height: 100%;
+         }
+         
+         .labels {}
+         
+         .labels>input {
+             width: 200px;
+         }
+         
+         .question>input {
+             /* margin:px; */
+             width: 50px;
+         }
+         
+         .reg-btn-container {
+             text-align: center;
+             margin-top: 15px;
+         }
+         
+         .form_reg {
+             width: 150px;
+             height: 30px;
+             color: white;
+             background: #8A5D04;
+             font-weight: 600;
+             border-radius: 7px;
+             border: none;
+             font-weight: 800;
+             /* text-align: center; */
+             /* align-self: center; */
+         }
+         /* =====================footer section======================== */
+         
+         footer {
+             /* display: grid; */
+         }
+         
+         .header-footer__social {
+             display: flex;
+             justify-content: space-between;
+             /* width: 200px; */
+         }
+         
+         .footer_.social_image {
+             width: 30px;
+         }
+         
+         .footer_social {
+             display: flex;
+         }
+         
+         @media screen and (max-width:860px) {
+             .bookings.d-flex,
+             .event_info {
+                 display: block !important;
+             }
+             .home_img {
+                 margin-top: 2rem;
+             }
+             .countdown * {
+                 font-size: 1rem;
+             }
+             #register {
+                 margin-top: 30px;
+             }
+             nav.menu li {
+                 display: none;
+             }
+             footer .d-flex {
+                 display: block !important;
+             }
+             .nav-items>ul {
+                 display: none !important;
+             }
+         }
+         
+         .menu_icon {
+             display: none;
+         }
+         
+         .menu_icon i {
+             margin-right: 20px;
+             align-self: center;
+             font-size: 1.5rem;
+         }
+         
+         .main_logo {
+             height: 40px;
+             width: 200px;
+             background-image: url('../imgs/LOT LOGO LQYER.png');
+             background-size: cover;
+             background-position: center;
+         }
+         
+         .menu li.list-group-item a {
+             color: black !important;
+         }
+         
+         .list-group-item {
+             margin: 0 10px;
+             background: none !important;
+             color: #fff !important;
+             align-self: center;
+             border: none !important;
+         }
+         
+         @media screen and (max-width:860px) {
+             .menu_icon {
+                 display: contents;
+                 align-self: center;
+             }
+             .menu_list {
+                 text-align: left;
+                 position: fixed;
+                 z-index: 9;
+                 right: 20px;
+                 top: 20px
+             }
+             .menu .list-group-item {
+                 margin-right: auto;
+                 width: 100%;
+                 color: black !important;
+                 padding: 10px 5px;
+                 border-bottom: 1px solid black !important;
+                 border-radius: 0 !important;
+             }
+             .menu .list-group {
+                 margin-top: 20px !important;
+                 background-color: white !important;
+             }
+             .menu {
+                 margin-top: 20px;
+                 text-align: right;
+             }
+             .main_logo {
+                 background: url('../imgs/LOT 3D GOLD.png');
+                 background-position: center;
+                 background-size: cover;
+                 height: 80px;
+                 width: 80px;
+             }
+         }

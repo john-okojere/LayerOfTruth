@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.containDashBoard{
+    /* background-color: red; */
+    /* border: 1px solid gold; */
+    box-shadow: 1px 1px 10px rgb(222, 221, 221), 1px 1px 10px  rgb(222, 221, 221) ;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 1rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.containMenu div{padding: 5px;}
+.containDashBoard h2 {
+    color: black;
+}
+.fa-user-circle{
+   font-size: 60px;
+   margin-top: 15px;
+ color: rgb(182, 161, 1);
+   
+}
+.menus{
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(75, 75, 75);
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
+
+}
+.menus p {
+    font-size: 13px;
+}
+.menus h3{
+    color: rgb(87, 86, 86);
+}
+.menus i {
+    margin-top: 22px;
+}
+.containMenu{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 59% 39%;
+    grid-gap: 2%;
+    padding: 2rem;
+}
+.settings{
+   
+    padding-left: 30px;
+
+    padding-top: 20px;
+    height: 280px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
+
+}
+.menusSide{
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    height: 25Vh;
+    grid-template-columns: 60% 40%;
+    box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
+
+
+}
+.menusSide i {
+    margin-top: 22px;
+}
+.fa-long-arrow-right{
+    color: rgb(182, 161, 1);
+}
+.styletextCard{
+    color: rgb(182, 161, 1);
+}
+
+.SettingsMenu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fa-cog{
+    font-size: 35px;
+    
+}
+.cog1{
+    color: black;
+   
+}
+
+.cog2{
+    color: rgb(207, 176, 5);
+    font-size: 50px;
+    margin-top: 10px;
+    margin-right: 9px;
+
+}
+.cog3{
+    color: rgb(207, 176, 5);
+    margin-top: 2px;
+    margin-bottom: 10px;
+   
+}
+.cog4{
+    font-size: 50;
+    color: black;
+
+}
+
+.settingsBar1{
+    text-align: end;
+    margin-right: 30;
+}
+.fa-arrow-circle-right{
+    font-size: 30px;
+    color: rgb(219, 187, 9);
+    margin-top: 30px;
+}
+.ViewMore{
+    margin-top: 20px;
+}
+.ViewMore p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:860px) {
+    .container{display: block;} 
+    .profileDashBoard .containMenu{display: block;}   
+}

@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+}
+.contain-formContain{
+    background-color: black;
+
+}
+
+
+
+.FormCover{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    /* background-color: red; */
+}
+.myForm{
+    width:80VW ;
+  
+    /* background-color: red; */
+    /* height: 80VH; */
+} 
+.FormHeader{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.FormHeader h2 {
+    color: gold;
+}
+.FormHeader p {
+    color: white;
+}
+.formControl{
+    margin-top: 30px;
+    margin-left: 40px;
+    border: none;
+    height: 6.5vh;
+    background-color: rgba(255, 255, 255, 0.82);
+    width: 60%;
+    outline: none;
+    border-radius: 15px;
+   
+
+
+}
+.formControl::placeholder{
+    
+    padding-left: 40%;
+    color: rgb(160, 160, 160);
+}
+.form-signup-container{
+    /* background-color:rgb(232, 198, 5); */
+    /* border: 1px solid   rgb(2    32     , 198, 5) ; */
+    border: 1px solid gold;    margin-bottom: 80px;
+    border-radius: 10px;
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 550px 550px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 450px));
+
+    flex-direction: column;
+    width: 100%;
+
+   
+
+}
+.LabelContro{
+    color: gold;
+
+}
+.labelcontrolInput{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    
+}
+.a3{
+    padding-left: 5px;
+    /* background-color: red; */
+}
+.contain-btn{
+    display: grid;
+    grid-template-columns: 80px 80px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.btn-Cancel{
+    height: 40px;
+    border: 1px solid gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color: rgb(86, 84, 84);
+    color: white;
+}
+.btn-Create{
+    height: 40px;
+    border: 1px solid  rgb(86, 84, 84);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color: gold;
+    color: rgb(56, 56, 56);
+
+}
