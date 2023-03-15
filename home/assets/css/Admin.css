@@ -53,6 +53,7 @@ padding: 1rem;
     display: grid;
     grid-template-columns: 59% 39%;
     grid-gap: 2%;
+    margin-left: 1.5%;
     padding: 2rem;
 }
 .settings{
@@ -62,6 +63,9 @@ padding: 1rem;
     padding-top: 20px;
     height: 280px;
     margin-bottom: 20px;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 4%;
     box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
 
 }
@@ -69,7 +73,9 @@ padding: 1rem;
     display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 30px;
-    height: 25Vh;
+    height: 30Vh;
+    margin-left: 5%;
+    width: 90%;
     grid-template-columns: 60% 40%;
     box-shadow: 1px 1px 10px rgb(231, 229, 229), 1px 1px 10px  rgb(247, 247, 247) ;
 
@@ -77,6 +83,25 @@ padding: 1rem;
 }
 .menusSide i {
     margin-top: 22px;
+}
+
+.ViewMore{
+    margin-top: 20px;
+    display: grid;
+    margin-left: 5%;
+  
+    
+    grid-template-columns: 110% 40%;
+}
+.ViewMore p{
+    font-size: 16px;
+    margin-left: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ViewMore i {
+    font-size: 16px;
+    margin-left: 20%;
+
 }
 .fa-long-arrow-right{
     color: rgb(182, 161, 1);
@@ -125,14 +150,18 @@ padding: 1rem;
     color: rgb(219, 187, 9);
     margin-top: 30px;
 }
-.ViewMore{
-    margin-top: 20px;
-}
-.ViewMore p{
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 @media screen and (max-width:860px) {
     .container{display: block;} 
     .profileDashBoard .containMenu{display: block;}   
+    .menusSide{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .settings{
+        width: 100%;
+        margin-left: 0%;
+
+    }
+
 }
